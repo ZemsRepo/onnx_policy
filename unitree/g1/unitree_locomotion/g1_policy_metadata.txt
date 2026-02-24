@@ -1,0 +1,20 @@
+
+========== METADATA ==========
+
+task: g1
+action_scale: 0.25
+joint_names: left_hip_pitch_joint,left_hip_roll_joint,left_hip_yaw_joint,left_knee_joint,left_ankle_pitch_joint,left_ankle_roll_joint,right_hip_pitch_joint,right_hip_roll_joint,right_hip_yaw_joint,right_knee_joint,right_ankle_pitch_joint,right_ankle_roll_joint
+joint_stiffness: 100.000,100.000,100.000,150.000,40.000,40.000,100.000,100.000,100.000,150.000,40.000,40.000
+joint_damping: 2.000,2.000,2.000,4.000,2.000,2.000,2.000,2.000,2.000,4.000,2.000,2.000
+default_joint_pos: -0.100,0.000,0.000,0.300,-0.200,0.000,-0.100,0.000,0.000,0.300,-0.200,0.000
+observation_names: ang_vel,gravity,cmd,dof_pos,dof_vel,actions,sin_phase,cos_phase
+num_observations: 47
+num_actions: 12
+ang_vel_scale: 0.25
+dof_pos_scale: 1.0
+dof_vel_scale: 0.05
+cmd_scale: 2.0,2.0,0.25
+is_recurrent: True
+rnn_type: lstm
+rnn_hidden_size: 64
+rnn_num_layers: 1
